@@ -24,6 +24,12 @@ module.exports = function (config) {
       //host:'0.0.0.0',
       contentBase: `${__dirname}/dist/index.html`,
       publicPath: '/',
+      proxy: {
+        '/api/*': {
+          target: 'http://lovesomnus.com:3000',
+          secure: false
+        }
+      }
     },
     module: {
       rules: [

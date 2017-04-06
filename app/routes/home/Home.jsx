@@ -4,9 +4,8 @@ class Home extends Component {
   render() {
     return (
       <div >
-        <div>
-          我是首页 热更成功了呵呵 yes
-          <Link to='/house' >house </Link>
+        <div style={{textAlign:'center',marginTop:'50px'}}>
+          <h2><Link to='/house'>大厂房产查询 </Link></h2>
         </div>
       </div>
     )

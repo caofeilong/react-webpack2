@@ -7,6 +7,8 @@
     "start": "webpack-dev-server --config  webpack.dev.config.js  --inline --devtool eval --progress --colors  --history-api-fallback"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "next",
