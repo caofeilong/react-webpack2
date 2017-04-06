@@ -5,7 +5,7 @@ class Home extends Component {
     return (
       <div >
         <div>
-          房子相关信息 也能热更新没问题
+          房子相关信息 也能热更新没问题  呵呵 哈哈 哦 不错
         </div>
       </div>
     )

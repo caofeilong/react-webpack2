@@ -8,8 +8,8 @@ module.exports = function (config) {
   return {
     entry: [
       'react-hot-loader/patch',
-      //'webpack-dev-server/client?http://localhost:8081',
-      //'webpack/hot/only-dev-server',
+      'webpack-dev-server/client?http://localhost:9001',
+      'webpack/hot/only-dev-server',
       './app/index.js'
     ],
     output: {
@@ -19,9 +19,11 @@ module.exports = function (config) {
     },
     devtool: 'inline-source-map',
     devServer: {
+      port: 9001,
       hot: true,
-      contentBase:  `${__dirname}/dist`,
-      publicPath: '/'
+      //host:'0.0.0.0',
+      contentBase: `${__dirname}/dist/index.html`,
+      publicPath: '/',
     },
     module: {
       rules: [
@@ -34,6 +36,16 @@ module.exports = function (config) {
           test: /\.css$/,
           use: ['style-loader', 'css-loader?modules', 'postcss-loader',],
         },
+        {
+          test: /\.scss$/,
+          exclude: [/node_modules/],
+          loaders: ["style-loader", "css-loader?module", "sass-loader"]
+        },
+        {
+          test: /\.gscss$/,
+          exclude: [/node_modules/],
+          loaders: ["style-loader", "css-loader?module", "sass-loader"]
+        }
       ],
     },
     plugins: [
