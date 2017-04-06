@@ -17,6 +17,7 @@ class Home extends Component {
         <table className="table table-striped">
           <thead>
           <tr>
+            <td>序号</td>
             <td>项目名称</td>
             <td>开发商</td>
             <td>地址</td>
@@ -27,6 +28,9 @@ class Home extends Component {
           <tbody>
           {list && list.length > 0 && list.map((item, i) => {
             return <tr key={i}>
+              <td>
+                {i+1}
+              </td>
               <td>
                 {item.projectName}
               </td>
