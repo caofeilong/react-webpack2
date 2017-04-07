@@ -40,7 +40,7 @@ class Home extends Component {
                                 {item.address}
                             </td>
                             <td>
-                                暂无
+                              {item.phone}
                             </td>
                             <td>
                                 {item.area}
