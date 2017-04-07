@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config  webpack.dev.config.js  --inline --devtool eval --progress --colors  --history-api-fallback"
+    "start": "webpack-dev-server --config  webpack.dev.config.js  --inline --devtool eval --progress --colors  --history-api-fallback",
+    "build":"webpack --config webpack.prod.config.js"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",

@@ -1,5 +1,6 @@
 # Environment Configuration
 .env
+dist
 
 # Build output folders
 build/
